@@ -1,5 +1,4 @@
 @import './media';
-@import './mixins';
 
 :root {
 	--main-color: #ffffff;
@@ -98,7 +97,7 @@ body {
 	height: 100vh;
 
 	.coffe-bg {
-		background-image: url('../img/wydmy.png');
+		background-image: url('../img/wydmy-optimized.jpg');
 		position: absolute;
 		background-size: cover;
 		background-position: center;
@@ -125,6 +124,42 @@ body {
 			color: var(--main-color);
 			font-weight: lighter;
 		}
+		.btn-scroll-to-offers {
+			position: relative;
+			margin-top: 3em;
+			padding: 0.4em 2em;
+			background: none;
+			border: none;
+			border-top: 3px solid var(--main-color);
+			border-left: 3px solid var(--main-color);
+			font-size: 2rem;
+			overflow: hidden;
+			a {
+				color: var(--main-color);
+				text-transform: uppercase;
+				text-decoration: none;
+				transition: color linear 200ms;
+			}
+		}
+		.btn-scroll-to-offers::before {
+			content: '';
+			position: absolute;
+			top: -100%;
+			left: -100%;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			background-color: var(--main-color);
+			z-index: -1;
+			transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+		}
+		.btn-scroll-to-offers:hover::before {
+			top: 0;
+			left: 0;
+		}
+		.btn-scroll-to-offers:hover a {
+			color: black;
+		}
 	}
 
 	.three-boxes {
@@ -147,9 +182,9 @@ body {
 
 .info {
 	position: relative;
-	min-height: 100vh;
+	min-height: auto;
 	.info-bg {
-		background-image: url(../img/laka-drzewo.png);
+		background-image: url(../img/laka-drzewo-optimized.jpg);
 		background-position: center;
 		background-size: cover;
 		z-index: -100;
@@ -160,9 +195,17 @@ body {
 	}
 
 	.container-info {
-		padding-top: 5%;
 		display: flex;
 		flex-direction: column;
+
+		&__experience {
+			font-size: 2rem;
+			padding: 1em;
+			color: var(--main-color);
+			span {
+				font-weight: bold;
+			}
+		}
 
 		.container-text {
 			color: var(--main-color);
@@ -233,7 +276,7 @@ body {
 		// left: 0;
 		// bottom: 0;
 		// right: 0;
-		background-image: url(../img/lodka-morze.png);
+		background-image: url(../img/lodka-optimized.jpg);
 		background-position: center;
 		background-size: cover;
 		z-index: -100;
@@ -281,6 +324,7 @@ body {
 				}
 				&-option:nth-last-child(1) {
 					border: none;
+					min-width: 4em;
 				}
 			}
 			&-column:nth-child(1) {
@@ -330,6 +374,9 @@ body {
 
 		span {
 			font-weight: bold;
+		}
+		a {
+			text-decoration: none;
 		}
 	}
 	&__google-map {

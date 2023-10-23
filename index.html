@@ -20,8 +20,8 @@
 <body>
     <header class="primary-header flex">
 
-        <div class="name" data-aos="fade-right" data-aos-delay="800">
-            <span>M.S Photo Art</span>
+        <div class="name" data-aos="fade-right" data-aos-delay="300">
+            <span>M.S. Photo Art</span>
         </div>
         <button class="menu nav-mobile-toggle"
             onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
@@ -65,22 +65,23 @@
         <div class="coffe-bg-sh bg"></div>
 
         <div class="center-text">
-            <h1 data-aos="fade-right" data-aos-delay="800">Profesjonalny wydruk
+            <h1 data-aos="fade-right" data-aos-delay="200">Profesjonalna oprawa
             </h1>
-            <h2 data-aos="fade-right" data-aos-delay="1000">Fotografii i zdjęć kolekcjonerskich</h2>
+            <h2 data-aos="fade-right" data-aos-delay="400">zdjęć kolekcjonerskich i fotograficznych</h2>
+            <button class="btn-scroll-to-offers"><a href="#info">oferty</a></button>
         </div>
 
 
         <div class="three-boxes">
-            <div class="box" data-aos="fade-right" data-aos-delay="400">
+            <div class="box" data-aos="fade-right" data-aos-delay="100">
                 <p class="title">Pasja</p>
                 <p class="text">Wszystko co robimy, pochodzi z serca</p>
             </div>
-            <div class="box" data-aos="fade-right" data-aos-delay="600">
+            <div class="box" data-aos="fade-right" data-aos-delay="300">
                 <p class="title">Jakość</p>
                 <p class="text">Skupiamy uwagę na jakości produktu</p>
             </div>
-            <div class="box" data-aos="fade-right" data-aos-delay="800">
+            <div class="box" data-aos="fade-right" data-aos-delay="500">
                 <p class="title">Czas realizacji</p>
                 <p class="text">Nie zwlekamy z pracą, utrzymujemy kontakt</p>
             </div>
@@ -88,41 +89,34 @@
 
     </section>
 
-    <section class="info">
+    <section class="info" id="info">
 
         <div class="info-bg bg"></div>
         <div class="info-bg-sh bg"></div>
 
         <div class="container-info">
+            <p class="container-info__experience" data-aos="fade-right" data-aos-delay="100">Osoba z wieloletnim
+                doświadczeniem w firmach: <span> profilap</span>
+                oraz <span> holiart</span>.
+            </p>
             <div class="left-info-box container-text">
-                <h3 data-aos="fade-right" data-aos-delay="100">Druk UV na szkle</h3>
-                <p data-aos="fade-right" data-aos-delay="300">Jest to jedna z najnowszych technik druku cyfrowego. Druk
-                    ten charakteryzuje się tym wysoką
-                    trwałością (utrwalany jest promieniami UV przez co jest odporny na czynniki atmosferyczne) oraz
-                    bardzo wysokim nasyceniem kolorów. Świetnie się nadaje do zastosowań reklamy zewnętrznej. &nbsp;<a
-                        href="contact">Więcej informacji</a></p>
+                <h3 data-aos="fade-right" data-aos-delay="200">Laminowanie i naklejanie</h3>
+                <p data-aos="fade-right" data-aos-delay="300">Laminowanie polega na pokryciu zdjęcia cienką warstwą
+                    folii. Zabieg ten skutecznie chroni pracę przed brudem, płowieniem i podnosi jej odporność na
+                    czynniki atmosferyczne. Zalaminowane zdjęcie, po naklejeniu na odpowiednie podłoże (np. PCV) i
+                    zamknięciu w aluminiowe ramy nadaje się do ekspozycji w każdych warunkach. Laminujemy foliami UV o
+                    strukturze satynowej, błyszczącej.
+                    Naklejamy zdjęcia na prawie każde, płaskie podłoże, min: pianki, kapę, dibond, tekturę lub płyty
+                    PCV.
+                    &nbsp;<a href="#contact">Więcej informacji</a></p>
             </div>
             <div class="right-info-box container-text">
-                <h3 data-aos="fade-left" data-aos-delay="100">Druk na płótnie – obrazy</h3>
+                <h3 data-aos="fade-left" data-aos-delay="100">Podklejanie</h3>
                 <p data-aos="fade-left" data-aos-delay="300">Obrazy na płótnie są idealnym dodatkiem do salonu,
                     sypialni, pokoju czy też kuchni. Wydruki na
                     canvasie wypełniają puste ściany, uczynią salon bardziej nowoczesnym, sypialnie bardziej przytulna,
                     a pokój dziecięcy bardziej kolorowy co ma istotny wpływ na rozwój dziecka. Obrazu jednoelementowe to
-                    klasyka. &nbsp;<a href="contact">Więcej informacji</a></p>
-            </div>
-            <div class="left-info-box container-text">
-                <h3 data-aos="fade-right" data-aos-delay="100">obrazy złożone</h3>
-                <p data-aos="fade-right" data-aos-delay="300">“Wieloczęściowe” to nowoczesna forma obrazu, rzucająca
-                    całkiem inne światło na coś co od dawna
-                    nazywane jest obrazem. Z pośród licznych rozwiązań na wyposażenie wnętrz to właśnie obraz jest
-                    bezsprzecznie polecaną formą udekorowania ścian. &nbsp; <a href="contact"> Więcej informacji</a></p>
-            </div>
-            <div class="right-info-box container-text">
-                <h3 data-aos="fade-left" data-aos-delay="100">Druk cyfrowy</h3>
-                <p data-aos="fade-left" data-aos-delay="300">Druk cyfrowy wyróżnia także wysoka jakość oraz intensywne,
-                    głębokie kolory. Jego dużym atutem jest
-                    również bardzo szybki czas realizacji. Tempo to dotyczy zarówno przygotowania materiału do druku,
-                    jak również samego procesu wydruku. &nbsp;<a href="contact">Więcej informacji</a></p>
+                    klasyka. &nbsp;<a href="#contact">Więcej informacji</a></p>
             </div>
         </div>
     </section>
@@ -137,42 +131,52 @@
             <table class="price-list-container__table">
 
                 <!-- po pierwszym tagu <tr> w każdym wierszu, dodajemy nową opcje -->
-                <tr class="price-list-container__table-column">
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
 
                     <!-- na przykład tu -->
-                    <td class="price-list-container__table-column-option"></td>
-                    <td class="price-list-container__table-column-price">10cm x 15cm</td>
-                    <td class="price-list-container__table-column-price">25cm x 40cm</td>
-                    <td class="price-list-container__table-column-price">40cm x 60cm</td>
-                    <td class="price-list-container__table-column-option">Inny</td>
+                    <td class="price-list-container__table-column-option">Naklejanie</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">85 zł</td>
                 </tr>
-                <tr class="price-list-container__table-column">
-                    <td class="price-list-container__table-column-option">Druk UV</td>
-                    <td class="price-list-container__table-column-price">30.00 zł</td>
-                    <td class="price-list-container__table-column-price">40.00 zł</td>
-                    <td class="price-list-container__table-column-price">60.00 zł</td>
-                    <td class="price-list-container__table-column-option">-</td>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">Laminowanie</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">95 zł</td>
                 </tr>
-                <tr class="price-list-container__table-column">
-                    <td class="price-list-container__table-column-option">Druk na płótnie</td>
-                    <td class="price-list-container__table-column-price">44.99 zł</td>
-                    <td class="price-list-container__table-column-price">65.00 zł</td>
-                    <td class="price-list-container__table-column-price">80.00 zł</td>
-                    <td class="price-list-container__table-column-option"><a href="contact">kontakt</a></td>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">Dibond 2mm</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">165 zł</td>
                 </tr>
-                <tr class="price-list-container__table-column">
-                    <td class="price-list-container__table-column-option">Obrazy złożone</td>
-                    <td class="price-list-container__table-column-price">-</td>
-                    <td class="price-list-container__table-column-price">-</td>
-                    <td class="price-list-container__table-column-price">-</td>
-                    <td class="price-list-container__table-column-option"><a href="contact">kontakt</a></td>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">PCV 3mm</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">66 zł</td>
                 </tr>
-                <tr class="price-list-container__table-column">
-                    <td class="price-list-container__table-column-option">Druk cyfrowy</td>
-                    <td class="price-list-container__table-column-price">15.00 zł</td>
-                    <td class="price-list-container__table-column-price">20.00 zł</td>
-                    <td class="price-list-container__table-column-price">30.00 zł</td>
-                    <td class="price-list-container__table-column-option">~60.00 zł</td>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">PCV 5mm</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">99 zł</td>
+                </tr>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">Plexi 3mm</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">175 zł</td>
+                </tr>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">podklejanie plexi 3mm</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">418 zł</td>
+                </tr>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">Karton bezkwasowy / bord line 5mm</td>
+                    <td class="price-list-container__table-column-option">m&sup2;</td>
+                    <td class="price-list-container__table-column-option">109 zł</td>
+                </tr>
+                <tr class="price-list-container__table-column" data-aos="fade-right" data-aos-delay="200">
+                    <td class="price-list-container__table-column-option">Listwa montażowa</td>
+                    <td class="price-list-container__table-column-option">mb</td>
+                    <td class="price-list-container__table-column-option">65 zł</td>
                 </tr>
             </table>
             <p class="price-list-container__alert" data-aos="zoom-in" data-aos-delay="100"><span
@@ -180,9 +184,7 @@
                 Niektórych formatów niestandardowych nie
                 jesteśmy
                 w stanie wydrukować. W razie wątpliwości, prosimy o kontakt. Dziękujemy.</p>
-            <p class="price-list-container__alert" data-aos="zoom-in" data-aos-delay="100"><span
-                    class="price-list-container__alert-span">Uwaga! </span>
-                Ceny z dnia <span class="price-list-container__alert-span">13.10.2023</span></p>
+            <p class="price-list-container__alert" data-aos="zoom-in" data-aos-delay="100">
         </div>
     </section>
 
@@ -192,20 +194,20 @@
 
     <section class="contact">
         <div class="contact__contact-box">
-            <span data-aos="fade-right" data-aos-delay="200">Email:</span>
-            <p data-aos="fade-right" data-aos-delay="500">msphotoart@gmail.com</p>
-            <span data-aos="fade-right" data-aos-delay="300">Telefon:</span>
-            <p data-aos="fade-right" data-aos-delay="700"><a href="tel:+48713333222">(+48) 713333222</a></p>
-            <span data-aos="fade-right" data-aos-delay="400">Adres:</span>
-            <p data-aos="fade-right" data-aos-delay="900"> 07-130 Łochów, ul. Wyspiańskiego 17</p>
+            <span data-aos="fade-right" data-aos-delay="100">Email:</span>
+            <p data-aos="fade-right" data-aos-delay="300">msphotoartlochow@gmail.com</p>
+            <span data-aos="fade-right" data-aos-delay="200">Telefon:</span>
+            <p data-aos="fade-right" data-aos-delay="400"><a href="tel:+48713333222">(+48) 501345096</a></p>
+            <p data-aos="fade-right" data-aos-delay="400"><a href="tel:+48713333222">(+48) 508333673</a></p>
+            <span data-aos="fade-right" data-aos-delay="300">Adres:</span>
+            <p data-aos="fade-right" data-aos-delay="500"> 07-130 Łochów, ul. Szkolna 1a</p>
             <div class="contact__link-box">
-                <a href="https://facebook.pl" data-aos="zoom-in" data-aos-delay="1000"><i
-                        class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://facebook.pl"><i class="fa-brands fa-square-facebook"></i></a>
             </div>
         </div>
         <div class="contact__google-map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19419.75419421496!2d21.696037584299788!3d52.52494315451946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f1c368b9bbee5%3A0x2736db28f840b7db!2zxYFvY2jDs3c!5e0!3m2!1spl!2spl!4v1697195468137!5m2!1spl!2spl"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1213.4792639936138!2d21.685028308856552!3d52.534184521569514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f1dbf535596dd%3A0xde30e2a560e230ba!2zU3prb2xuYSAxQSwgMDctMTMwIMWBb2Now7N3!5e0!3m2!1spl!2spl!4v1698066454929!5m2!1spl!2spl"
                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>

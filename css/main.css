@@ -97,7 +97,7 @@
     max-width: 90%;
   }
   .info .container-info .container-text h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 0.6em 1.6em;
   }
   .info .container-info .container-text p {
@@ -200,7 +200,7 @@
   .price-list .price-list-container {
     padding: 4em;
     margin: 2em 0;
-    width: 90%;
+    width: 70%;
   }
   .price-list .price-list-container__table {
     width: 100%;
@@ -251,8 +251,11 @@
   .three-boxes .box .text {
     font-size: 1.8rem;
   }
+  .info .container-info {
+    padding-block: 3rem;
+  }
   .info .container-info .container-text {
-    max-width: 60%;
+    max-width: 70%;
   }
   .info .container-info .container-text h3 {
     font-size: 3.6rem;
@@ -285,7 +288,7 @@
   .price-list .price-list-container {
     padding: 3em;
     margin: 2em 0;
-    width: 70%;
+    width: 60%;
   }
   .price-list .price-list-container__table {
     width: 100%;
@@ -396,7 +399,7 @@ body {
   height: 100vh;
 }
 .main-page .coffe-bg {
-  background-image: url("../img/wydmy.png");
+  background-image: url("../img/wydmy-optimized.jpg");
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -424,6 +427,42 @@ body {
   color: var(--main-color);
   font-weight: lighter;
 }
+.main-page .center-text .btn-scroll-to-offers {
+  position: relative;
+  margin-top: 3em;
+  padding: 0.4em 2em;
+  background: none;
+  border: none;
+  border-top: 3px solid var(--main-color);
+  border-left: 3px solid var(--main-color);
+  font-size: 2rem;
+  overflow: hidden;
+}
+.main-page .center-text .btn-scroll-to-offers a {
+  color: var(--main-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color linear 200ms;
+}
+.main-page .center-text .btn-scroll-to-offers::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  z-index: -1;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+.main-page .center-text .btn-scroll-to-offers:hover::before {
+  top: 0;
+  left: 0;
+}
+.main-page .center-text .btn-scroll-to-offers:hover a {
+  color: black;
+}
 .main-page .three-boxes {
   display: flex;
   align-items: center;
@@ -442,10 +481,10 @@ body {
 
 .info {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
 }
 .info .info-bg {
-  background-image: url(../img/laka-drzewo.png);
+  background-image: url(../img/laka-drzewo-optimized.jpg);
   background-position: center;
   background-size: cover;
   z-index: -100;
@@ -455,9 +494,16 @@ body {
   z-index: -10;
 }
 .info .container-info {
-  padding-top: 5%;
   display: flex;
   flex-direction: column;
+}
+.info .container-info__experience {
+  font-size: 2rem;
+  padding: 1em;
+  color: var(--main-color);
+}
+.info .container-info__experience span {
+  font-weight: bold;
 }
 .info .container-info .container-text {
   color: var(--main-color);
@@ -516,7 +562,7 @@ body {
   justify-content: center;
 }
 .price-list .price-list-bg {
-  background-image: url(../img/lodka-morze.png);
+  background-image: url(../img/lodka-optimized.jpg);
   background-position: center;
   background-size: cover;
   z-index: -100;
@@ -561,6 +607,7 @@ body {
 }
 .price-list .price-list-container__table-column-option:nth-last-child(1) {
   border: none;
+  min-width: 4em;
 }
 .price-list .price-list-container__table-column:nth-child(1) {
   border: none;
@@ -604,6 +651,9 @@ body {
 }
 .contact__contact-box span {
   font-weight: bold;
+}
+.contact__contact-box a {
+  text-decoration: none;
 }
 .contact__google-map {
   width: 100%;
