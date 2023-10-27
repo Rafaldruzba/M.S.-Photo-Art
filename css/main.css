@@ -433,8 +433,8 @@ body {
   padding: 0.4em 2em;
   background: none;
   border: none;
-  border-top: 3px solid var(--main-color);
-  border-left: 3px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
+  border-left: 2px solid var(--main-color);
   font-size: 2rem;
   overflow: hidden;
 }
@@ -461,7 +461,7 @@ body {
   left: 0;
 }
 .main-page .center-text .btn-scroll-to-offers:hover a {
-  color: black;
+  color: #283a46;
 }
 .main-page .three-boxes {
   display: flex;
